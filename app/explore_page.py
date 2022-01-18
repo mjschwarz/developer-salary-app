@@ -76,8 +76,9 @@ def show_explore_page():
     st.write('### Stack Overflow Developer Survey 2021')
     # responses - pie chart
     st.write('#### Number of responses per country')
-    data = df['Country'].value_counts()
-    fig = px.pie(df['Country'], values=df['Country'].value_counts(), names=data.index)
+    country = df['Country']
+    data = country.value_counts()
+    fig = px.pie(country, values=data, names=data.index, hover_data=country)
     st.plotly_chart(fig)
     # country - bar chart
     st.write('#### Mean Salary by Country')
