@@ -78,7 +78,7 @@ def show_explore_page():
     st.write('#### Number of responses per country')
     country = df['Country']
     data = country.value_counts()
-    fig = px.pie(country, values=data, names=data.index, hover_data=country)
+    fig = px.pie(country, values=data, names=data.index)
     st.plotly_chart(fig)
     # country - bar chart
     st.write('#### Mean Salary by Country')
