@@ -1,7 +1,7 @@
 import streamlit as st
-from predict_page import show_predict_page
-from explore_page import show_explore_page
-from about_page import show_about_page
+from app.predict_page import show_predict_page
+from app.explore_page import show_explore_page
+from app.about_page import show_about_page
 
 
 # sidebar
