@@ -7,6 +7,8 @@ such as Country of Employment, Education Level, and Years of Professional Experi
 
 ## Functionality
 
+Check out this app on [Heroku](https://developer-salary-app.herokuapp.com).
+
 - This app was created using Streamlit and Python
 - All data comes from the Stack Overflow 2021 Developer Survey.
 - On the explore page, this data is filtered for outliers, minimum sample size, and displayed graphically.
